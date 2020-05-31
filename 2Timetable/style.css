@@ -1,0 +1,219 @@
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+*{
+    box-sizing:border-box;
+}
+.container{
+    width:100%;
+    max-width:1100px;
+    margin:0 auto;
+}
+
+/*navigation*/
+.navigation{
+    margin-bottom:40px;
+    margin-top:46px;
+    margin-left:56px;
+}
+
+.nav__inner{
+    display:flex;
+    justify-content:center;
+}
+.nav__main{
+    width:376px;
+    height:56px;
+    display:flex;
+    align-items:center;
+    background-color:white;
+}
+
+.nav__arrow{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+    margin: 0 19px;
+
+    transition: .1s;
+}
+
+.nav__arrow:hover {
+    transform: scale(1.08);
+}
+
+.nav__text{
+    margin: 0;
+    width: 200px;
+}
+
+.week{
+    color: #000000;
+    font-size: 30px;
+    font-weight: bold;
+    font-size:20px;
+}
+
+.nav__calendar{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+
+    width: 56px;
+    height: 56px;
+    border-radius: 8px;
+    background-color: white;
+
+    box-shadow: 0;
+    transition: .1s linear;
+}
+
+.nav__calendar:hover{
+    box-shadow: 0 0 24px #D9D9D9;
+    transform: scale(1.07);
+}
+
+
+
+/*все дни*/
+.weekday{
+
+}
+.weekday__days{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    background-color:white;
+    height:auto;
+}
+
+.link__progress {
+    text-decoration: none;
+}
+
+/*один день*/
+.day{
+    width:495px;
+    height:294px;
+    background-color:white;
+    margin-bottom:56px;
+}
+/*полное название дня(день недели + дата)*/
+.day__fullname{
+    display:flex;
+    justify-content: center;
+    font-size:24px;
+    line-height: 29px;
+    word-spacing:15px;
+    margin-bottom:2px;
+}
+/*день недели*/
+.day__name{
+    color:#173B80;
+}
+/*дата дня*/
+.day__date{
+    color:#13A9E9;
+    word-spacing:0px;
+}
+/*пара*/
+.pair {
+    display:flex;
+    align-items:center;
+    margin-top:12px;
+    border-radius:27.1875px;
+    background:rgba(0,0,0,0.07);
+    width:100%;
+    height:54px;
+    padding-top:15px;
+    padding-bottom:15px;
+}
+
+.pair:hover {
+    background: #E0E0E0;
+    cursor: pointer;
+}
+
+/*номер пары*/
+.pair__num{
+    width:44px;
+    padding-left:16px;
+    padding-right:16px;
+
+    font-size:22.5px;
+    font-weight: 600;
+    color: #173B80;
+}
+/*название пары*/
+.pair__name{
+    margin-right:18px;
+
+    width:282px;
+    font-weight: 600;
+    font-size:18px;
+    color: #173B80;
+
+
+}
+/*рамка группы (светло-голубая)*/
+.pair__group--frame{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    width:73px;
+    height: 36px;
+
+    border-radius:17.8125px;
+    background: rgba(32, 98, 226, 0.4);
+
+    margin-right:8px;
+
+}
+/*группа (в синем)*/
+.pair__group{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+
+    width: 66px;
+    height:28px;
+    background: #2062E2;
+
+    border-radius:14.0625px;
+
+
+}
+
+.group{
+    font-weight: bold;
+    font-size:18px;
+    color:#ffffff;
+}
+/*кабинет*/
+.pair__cab{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+
+    width: 52px;
+    height:28px;
+    background: #173B80;
+
+    border-radius:14.0625px;
+
+    margin-right:8px;
+
+}
+
+.cab{
+    color:#ffffff;
+    font-size:18px;
+    font-weight: bold;
+}
+
+
